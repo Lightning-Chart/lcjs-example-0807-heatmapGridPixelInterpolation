@@ -15,7 +15,9 @@ const heatmapRows = 40
 
 // Create Dashboard with two charts and two Heatmap Grid Series.
 // NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
-const dashboard = lightningChart().Dashboard({
+const dashboard = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        }).Dashboard({
     numberOfColumns: 2,
     numberOfRows: 1,
 })

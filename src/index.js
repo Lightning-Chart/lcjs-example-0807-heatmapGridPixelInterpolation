@@ -2,12 +2,12 @@
  * LightningChartJS example that showcases the pixel interpolation mode feature of 2D Heatmaps.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, PalettedFill, LUT, LegendBoxBuilders, emptyFill, UIOrigins, regularColorSteps, Themes } = lcjs
 
-const { createWaterDropDataGenerator } = require('@arction/xydata')
+const { createWaterDropDataGenerator } = require('@lightningchart/xydata')
 
 // Define heatmap intensity data.
 const heatmapColumns = 20
@@ -48,7 +48,6 @@ const heatmap0 = chart0
     })
     .setFillStyle(palette)
     .setIntensityInterpolation('bilinear')
-    .setCursorInterpolationEnabled(true)
 
 const legend0 = chart0
     .addLegendBox(LegendBoxBuilders.HorizontalLegendBox)
@@ -77,7 +76,6 @@ const heatmap1 = chart1
     })
     .setFillStyle(palette)
     .setIntensityInterpolation('disabled')
-    .setCursorInterpolationEnabled(false)
 
 const legend1 = chart1
     .addLegendBox(LegendBoxBuilders.HorizontalLegendBox)

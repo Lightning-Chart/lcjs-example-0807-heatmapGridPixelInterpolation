@@ -74,11 +74,11 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Heatmap Grid Series]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/HeatmapGridSeriesIntensityValues.html
-[Paletted Fill Style]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/PalettedFill.html
-[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/LUT.html
-[Empty line style]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/variables/emptyLine.html
-[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/ChartXY.html
-[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/Axis.html
-[Legend Box]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/Chart.html#addLegendBox
+[Heatmap Grid Series]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/HeatmapGridSeriesIntensityValues.html
+[Paletted Fill Style]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/PalettedFill.html
+[Color lookup table]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/LUT.html
+[Empty line style]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/variables/emptyLine.html
+[Chart XY]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/ChartXY.html
+[Axis XY]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Axis.html
+[Legend Box]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Chart.html#addLegendBox
 

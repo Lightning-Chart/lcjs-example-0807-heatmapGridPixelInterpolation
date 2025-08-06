@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, PalettedFill, LUT, LegendBoxBuilders, emptyFill, UIOrigins, regularColorSteps, Themes } = lcjs
+const { lightningChart, PalettedFill, LUT, emptyFill, UIOrigins, regularColorSteps, Themes } = lcjs
 
 const { createWaterDropDataGenerator } = require('@lightningchart/xydata')
 
@@ -38,7 +38,6 @@ const chart0 = dashboard
         rowIndex: 0,
     })
     .setTitleFillStyle(emptyFill)
-    .setPadding({ top: 80 })
 
 const heatmap0 = chart0
     .addHeatmapGridSeries({
@@ -49,24 +48,12 @@ const heatmap0 = chart0
     .setFillStyle(palette)
     .setIntensityInterpolation('bilinear')
 
-const legend0 = chart0
-    .addLegendBox(LegendBoxBuilders.HorizontalLegendBox)
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.5,
-    })
-    .add(chart0)
-    .setPosition({ x: 100, y: 100 })
-    .setOrigin(UIOrigins.RightTop)
-
 const chart1 = dashboard
     .createChartXY({
         columnIndex: 1,
         rowIndex: 0,
     })
     .setTitleFillStyle(emptyFill)
-    .setPadding({ top: 80 })
 
 const heatmap1 = chart1
     .addHeatmapGridSeries({
@@ -76,17 +63,6 @@ const heatmap1 = chart1
     })
     .setFillStyle(palette)
     .setIntensityInterpolation('disabled')
-
-const legend1 = chart1
-    .addLegendBox(LegendBoxBuilders.HorizontalLegendBox)
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.5,
-    })
-    .add(chart1)
-    .setPosition({ x: 100, y: 100 })
-    .setOrigin(UIOrigins.RightTop)
 
 // Generate test data.
 createWaterDropDataGenerator()
